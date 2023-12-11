@@ -37,7 +37,7 @@ The Defender for Endpoint sensor requires Microsoft Windows HTTP (WinHTTP) to re
 > [!TIP]
 > For organizations that use forward proxies as a gateway to the Internet, you can use network protection to [investigate connection events that occur behind forward proxies](investigate-behind-proxy.md).
 
-The WinHTTP configuration setting is independent of the Windows Internet (WinINet) browsing proxy settings (see, [WinINet vs. WinHTTP](/windows/win32/wininet/wininet-vs-winhttp)). It can only discover a proxy server by using the following discovery methods:
+The WinHTTP configuration setting is independent of the Windows Internet (WinINet) browsing proxy settings at Internet Options (see, [WinINet vs. WinHTTP](/windows/win32/wininet/wininet-vs-winhttp)). It can only discover a proxy server by using the following discovery methods:
 
 - Autodiscovery methods:
 
@@ -57,7 +57,7 @@ The WinHTTP configuration setting is independent of the Windows Internet (WinINe
 > [!NOTE]
 > Defender antivirus and EDR proxies can be set independently.  In the sections that follow, be aware of those distinctions.
 
-## Configure the proxy server manually using a registry-based static proxy
+## Configure the proxy server through group policy or manually using a registry-based static proxy
 
 Configure a registry-based static proxy for Defender for Endpoint detection and response (EDR) sensor to report diagnostic data and communicate with Defender for Endpoint services if a computer isn't permitted to connect to the Internet.
 
